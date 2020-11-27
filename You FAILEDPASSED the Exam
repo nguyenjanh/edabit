@@ -1,0 +1,14 @@
+public class Challenge{
+  public static String gradePercentage(String userScore, String passScore){
+
+		String result = "";
+			
+		if (Integer.parseInt(userScore.substring(0, userScore.indexOf("%"))) >= Integer.parseInt(passScore.substring(0, passScore.indexOf("%"))))
+			result += "PASSED";
+		else
+			result += "FAILED";
+		
+		return "You " + result + " the Exam";
+			
+	}
+}
