@@ -1,0 +1,18 @@
+public class Challenge {
+  public static boolean validWordNest(String word, String nest) {	
+		
+		if (word.equals(nest))
+			return true;
+		
+		if (nest.indexOf(word) > -1) {
+			
+			if (nest.substring(nest.indexOf(word) + word.length()).indexOf(word) > -1)
+				return false;
+			
+			return validWordNest(word, nest.substring(0, nest.indexOf(word)) + nest.substring(nest.indexOf(word) + word.length()));
+		}
+		
+		return false;
+		
+	}
+}
