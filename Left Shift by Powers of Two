@@ -1,3 +1,5 @@
+//https://edabit.com/challenge/KpAxNFuZj79KzLDc5
+
 public class LeftShift {
 	public static int shiftToLeft(int x, int y) {
 		return x * (int) Math.pow(2,  y);
