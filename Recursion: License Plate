@@ -1,0 +1,17 @@
+//https://edabit.com/challenge/qafJTrENQeMq6apgy
+
+public class PlateNumber {
+  public static String licensePlate(String code,int group) {
+	  	
+		code = code.toUpperCase();
+		
+		if (code.length() <= group)
+			return code;
+		
+		while (code.indexOf("-") > 0)
+			code = code.substring(0,code.indexOf("-")) + code.substring(code.indexOf("-") + 1);
+		
+		return licensePlate(code.substring(0, code.length() - group), group)  + "-" + code.substring(code.length() - group);
+		
+	}
+}
