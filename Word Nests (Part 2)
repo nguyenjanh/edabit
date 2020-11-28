@@ -1,3 +1,5 @@
+https://edabit.com/challenge/qRRYmmyTRBhJJNMwq
+
 public class Challenge {
   public static boolean validWordNest(String word, String nest) {	
 		
