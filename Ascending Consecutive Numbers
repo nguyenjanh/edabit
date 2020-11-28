@@ -1,6 +1,7 @@
 https://edabit.com/challenge/YzWb77MowQpixfpWh
 
-public static boolean ascending(String str) {
+public class Challenge {
+  public static boolean ascending(String str) {
 		
 		int digitCount = str.length(), max = digitCount % 2 == 0 ? digitCount / 2 : digitCount / 2 - 1;
 		
@@ -29,3 +30,5 @@ public static boolean ascending(String str) {
 		
 		return false;
 	}
+
+}
