@@ -1,0 +1,29 @@
+public static boolean ascending(String str) {
+		
+		int digitCount = str.length(), max = digitCount % 2 == 0 ? digitCount / 2 : digitCount / 2 - 1;
+		
+		for (int a = 1; a <= max; a++) {
+			
+			String temp = str;
+			
+			String first = temp.substring(0, a);
+			
+			temp = temp.substring(a);
+			
+			while (temp.length() > 0) {
+				
+				if (temp.length() < a || Integer.parseInt(first) + 1 != Integer.parseInt(temp.substring(0, a)))
+					break;
+				
+				first = temp.substring(0, a);
+				temp = temp.substring(a);
+				
+			}
+			
+			if (temp.length() == 0)
+				return true;
+			
+		}
+		
+		return false;
+	}
