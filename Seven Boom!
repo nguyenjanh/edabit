@@ -1,3 +1,5 @@
+https://edabit.com/challenge/CKqfEowjmSTw2jsso
+
 public class Challenge {
 	public static String sevenBoom(int[] arr) {
 		
