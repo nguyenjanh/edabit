@@ -1,0 +1,20 @@
+//https://edabit.com/challenge/7Tb7qMDQHtz3xpydd
+
+public static int[][] squarePatch(int n) {
+		
+		int[][] nums = new int[n][n];
+		
+		for (int a = 0, b = 0; b < n; a++) {
+			
+			nums[a][b] = n;
+			
+			if (a >= n - 1) {
+				a = -1;
+				b++;
+			}
+			
+		}
+		
+		return nums;
+		
+	}
