@@ -1,0 +1,19 @@
+//https://edabit.com/challenge/Rarq6J9wR8FsN2qQ4
+
+	public static int bell(int n) {
+		
+		int[][] triangle = new int[n + 1][n + 1]; 
+		
+		triangle[0][0] = 1; 
+          
+        for (int a = 1; a <= n; a++) { 
+        	
+        	triangle[a][0] = triangle[a - 1][a - 1]; 
+
+            for (int b = 1; b <= a; b++) 
+            	triangle[a][b] = triangle[a - 1][b - 1] + triangle[a][b - 1]; 
+            
+        } 
+		
+		return triangle[n - 1][n - 1];
+	}
